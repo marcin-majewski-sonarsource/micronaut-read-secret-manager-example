@@ -1,0 +1,16 @@
+micronaut:
+  application:
+    name: DeleteInactiveProjects
+  config-client:
+    enabled: true
+
+aws:
+  distributed-configuration:
+    prefix: Projects-
+    delimiter: '-'
+    common-application-name: DeleteInactiveProjects
+
+#  secretsmanager:
+#    secrets:
+#      - secret-name: DeleteLambdaDBUser
+#        prefix: fromdelete
